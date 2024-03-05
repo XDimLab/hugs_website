@@ -122,7 +122,7 @@
                   <span class="icon">
                       <i class="fas fa-file-pdf" style="color: orangered"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>Paper (CVPR2024)</span>
                 </a>
               </span>
               <!-- Code Link. -->
@@ -132,7 +132,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                 </a>
               </span>
             </div>
@@ -262,23 +262,6 @@
             </div>
           </div>
         </div>
-          <!-- <div class="twentytwenty-container twentytwenty-container-top3">
-            <div class="cmpcontent">
-              <img src="./images/inthewild/Bee_Collecting_Pollen_2004-08-14.jpg">
-            </div>
-            <div class="cmpcontent">
-              <img src="./images/inthewild/Bee_Collecting_Pollen_2004-08-14_ours.jpg">
-            </div>
-          </div>
-          <div class="twentytwenty-container twentytwenty-container-top4">
-            <div class="cmpcontent">
-              <img src="./images/inthewild/Bee_Collecting_Pollen_2004-08-14.jpg">
-            </div>
-            <div class="cmpcontent">
-              <img src="./images/inthewild/Bee_Collecting_Pollen_2004-08-14_ours.jpg">
-            </div>
-          </div>
-        </div> -->
 
       </div>
     </div>
@@ -295,8 +278,15 @@
     });
 
     bulmaCarousel.attach('#results-carousel-vertical', {
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       slidesToShow: 2,
+      loop: true,
+      autoplay: true,
+    });
+
+    bulmaCarousel.attach('#results-carousel-vertical2', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
       loop: true,
       autoplay: true,
     });
@@ -373,7 +363,7 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel-vertical" class="carousel results-carousel">
+      <div id="results-carousel-vertical2" class="carousel results-carousel">
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
               <source src="./video/waymo/104481.mp4"
