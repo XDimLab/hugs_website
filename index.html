@@ -187,14 +187,14 @@
 
 
 <h3 class="title has-text-centered">
-  Comparison with NSG & MARS based
+  Comparison with NSG & MARS based on Noisy BBOX
 </h3>
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel-vertical" class="carousel results-carousel">
 
-        <div class="twoitem">
+        <div class="fouritem">
           <div class="twentytwenty-container twentytwenty-container-top11">
             <div class="cmpcontent">
               <img src="./images/baseline/kitti02/ours.png">
@@ -211,8 +211,24 @@
               <img src="./images/baseline/kitti06/nsg.png">
             </div>
           </div>
+          <div class="twentytwenty-container twentytwenty-container-top31">
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti02/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti02/nsg.png">
+            </div>
+          </div>
+          <div class="twentytwenty-container twentytwenty-container-top41">
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti06/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti06/nsg.png">
+            </div>
+          </div>
         </div>
-        <div class="twoitem">
+        <div class="fouritem">
           <div class="twentytwenty-container twentytwenty-container-top12">
             <div class="cmpcontent">
               <img src="./images/baseline/kitti02/ours.png">
@@ -227,6 +243,22 @@
             </div>
             <div class="cmpcontent">
               <img src="./images/baseline/kitti06/mars.png">
+            </div>
+          </div>
+          <div class="twentytwenty-container twentytwenty-container-top32">
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti02/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti02/mars.png">
+            </div>
+          </div>
+          <div class="twentytwenty-container twentytwenty-container-top42">
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti06/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/vkitti06/mars.png">
             </div>
           </div>
         </div>
@@ -289,16 +321,26 @@
       after_label: 'MARS',
       default_offset_pct: 0.75,
     });
-    // $(".twentytwenty-container-top3").twentytwenty({
-    //   before_label: 'Input',
-    //   after_label: 'optical flow',
-    //   default_offset_pct: 0.75,
-    // });
-    // $(".twentytwenty-container-top4").twentytwenty({
-    //   before_label: 'Input',
-    //   after_label: 'depth',
-    //   default_offset_pct: 0.75,
-    // });
+    $(".twentytwenty-container-top31").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'NSG',
+      default_offset_pct: 0.75,
+    });
+    $(".twentytwenty-container-top32").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'MARS',
+      default_offset_pct: 0.75,
+    });
+    $(".twentytwenty-container-top41").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'NSG',
+      default_offset_pct: 0.75,
+    });
+    $(".twentytwenty-container-top42").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'MARS',
+      default_offset_pct: 0.75,
+    });
   });
 </script>
 
@@ -326,7 +368,7 @@
 
 <br>
 <h3 class="title has-text-centered">
-  Waymo Rendering Results
+  More Rendering Results
 </h3>
 <section class="hero is-light is-small">
   <div class="hero-body">
